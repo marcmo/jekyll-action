@@ -1,5 +1,9 @@
-#!/bin/sh -l
+#!/bin/bash
+set -e
 
-echo "Hello $1"
-time=$(date)
-echo ::set-output name=time::$time
+echo "#################################################"
+echo "Starting the Jekyll Action"
+
+bundle install
+echo "#################################################"
+echo "Installion completed"
